@@ -1,6 +1,6 @@
 # Structly: Life Optimization Platform
 
-> **Note:** This repository contains the **Prototype** version of Structly. The current stable code is located in the `main` branch. Built using **Google AI Studio**.
+> **Note:** This repository contains the **Prototype** version of Structly. The current stable code is located in the `master` branch. Built using **Google AI Studio**.
 
 ## 🧬 What is Structly?
 
