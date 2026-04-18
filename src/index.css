@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #0C0C0E;
+  --surface: #151518;
+  --surface-light: #1E1E22;
+  --accent: #818CF8;
+  --text-primary: #F4F4F5;
+  --text-secondary: #A1A1AA;
+  --text-muted: #52525B;
+  --border-dim: #27272A;
+}
+
+[data-theme="light"] {
+  --bg: #FAFAFA;
+  --surface: #FFFFFF;
+  --surface-light: #F4F4F5;
+  --accent: #6366F1;
+  --text-primary: #18181B;
+  --text-secondary: #52525B;
+  --text-muted: #A1A1AA;
+  --border-dim: #E4E4E7;
+}
+
+@theme {
+  --font-serif: "Georgia", serif;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-light: var(--surface-light);
+  --color-accent: var(--accent);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border-dim: var(--border-dim);
+
+  --color-brand-primary: var(--color-accent);
+  --color-brand-accent: var(--color-accent);
+  --color-brand-surface: var(--color-bg);
+  --color-brand-muted: var(--color-text-muted);
+
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-bg text-text-primary antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-normal font-normal;
+  }
+}
+
+.starting-block-card {
+  @apply bg-surface border border-border-dim rounded-2xl p-8 mb-6;
+}
+
+.timeline-item-row {
+  @apply flex gap-4 items-center py-3 border-b border-border-dim;
+}
+
+.identity-tag-box {
+  @apply bg-surface-light border border-border-dim p-3 rounded-lg;
+}
+
+.sidebar-border {
+  @apply border-r border-border-dim;
+}
+
+.main-border {
+  @apply border-x border-border-dim;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:bg-surface-light;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Structly",
+  "description": "AI Chief of Staff for life optimization and administrative automation.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["AI Productivity", "Agentic Automation", "Voice Journaling"]
+}
